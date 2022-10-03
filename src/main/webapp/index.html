@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<style type="text/css">
+  body {
+	text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+
+  <form action="salvarUsuario" method="post" onsubmit="return validarDados();">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" style="border-radius:5px;">
+    <br>
+    <label for="login">Login:</label>
+    <input type="text" id="login" name="login" style="border-radius:5px;">
+    <br>
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" style="border-radius:5px;">
+    <br>
+    <input type="submit" value="Salvar" style="width:200px;" onclick="validarDados();">
+  </form>
+  
+<script type="text/javascript">
+  function validarDados(){
+	  var nome = document.getElementById("nome").value;
+	  var login = document.getElementById("login").value;
+	  var senha = document.getElementById("senha").value;
+	  
+	  if (nome == ''){
+		  alert("Informe o nome!");
+		  return false;
+	  } else if (login == ''){
+		  alert("Informe o login!");
+		  return false;
+	  } else if (senha == ''){
+		  alert("Informe a senha!");
+		  return false;
+	  } else {
+		  return true;
+	  }
+  }
+</script>
+</body>
+</html>
