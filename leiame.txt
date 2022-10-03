@@ -1,0 +1,7 @@
+Início do desenvolvimento no Mac.
+Eclipse: 2022-03
+java, javac : 11
+servidor web: wildfly
+Tipo do projeto: Dynamic web project
+------------------------------------
+
